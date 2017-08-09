@@ -11,4 +11,35 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <artifactId>my-app</artifactId>  
   <version>1</version>  
   
+  <profiles>
+        <profile>
+            <id>mod1</id>
+            <modules>
+                <module>test1</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>mod2</id>
+            <modules>
+                <module>test3</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>mod12</id>
+            <modules>
+                <module>test1</module>
+                <module>test2</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>all</id>
+            <modules>
+                <module>test1</module>
+                <module>test2</module>
+               </modules>
+        </profile>
+    </profiles>
+
+  
+  
 </project> 
